@@ -13,11 +13,7 @@ public class UserGUI : MonoBehaviour
 
     private void OnGUI()
     {
-        if (GUI.Button(new Rect(700, 100, 90, 90), "GO") && action.getGameState() == GameState.NOT_ENDED)
-        {
-            action.MoveBoat();
 
-        }
         if (action.getGameState() == GameState.WIN)
         {
             GUI.Label(new Rect(700, 300, 400, 400), "you win");

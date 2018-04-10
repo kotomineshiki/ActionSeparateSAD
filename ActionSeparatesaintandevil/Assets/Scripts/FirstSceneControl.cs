@@ -50,7 +50,7 @@ public class FirstSceneControl : MonoBehaviour, ISceneControl, IUserAction
         boat.transform.localScale = new Vector3(3, 1, 1);
         boat.transform.position = Boat_Right;
         boat.name = "boat";
-
+        boat.AddComponent<MoveTheBoat>();
         GameObject temp_priest = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         temp_priest.transform.localScale = new Vector3(1, 1, 1);
         temp_priest.AddComponent<On_Off>();

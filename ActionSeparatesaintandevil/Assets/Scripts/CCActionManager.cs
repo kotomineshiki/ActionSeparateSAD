@@ -11,7 +11,7 @@ public class CCActionManager : SSActionManager, ISSActionCallback
 
     protected new void Start()
     {
-        float speed = 5f;
+        float speed = 10f;
         sceneController = (FirstSceneControl)Director.getInstance().currentSceneControl;
         sceneController.actionManager = this;
 
